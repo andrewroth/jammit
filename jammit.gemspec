@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name      = 'jammit'
+  s.name      = 'andrewroth_jammit'
   s.version   = '0.6.3'         # Keep version in sync with jammit.rb
   s.date      = '2011-05-26'
 

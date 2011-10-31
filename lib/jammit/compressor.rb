@@ -87,6 +87,7 @@ module Jammit
     def compress_css(paths, variant=nil, asset_url=nil)
       @asset_contents = {}
       css = concatenate_and_tag_assets(paths, variant)
+      return css unless Jammit.compress_css
       css = @css_compressor.compress(css) if Jammit.compress_assets
       case variant
       when nil      then return css
